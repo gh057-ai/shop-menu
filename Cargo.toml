@@ -11,6 +11,5 @@ opt-level = 3  # Optimize dependencies
 
 [dependencies]
 bevy = { version = "0.14.2", features = ["bevy_ui", "dynamic_linking"] }
-bevy_derive = "0.14.2"
 env_logger = "0.11.5"
 log = "0.4.22"
