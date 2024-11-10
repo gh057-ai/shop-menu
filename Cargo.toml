@@ -1,0 +1,16 @@
+[package]
+name = "shop-menu"
+version = "0.1.0"
+edition = "2021"
+
+# Add these lines for faster compilation
+[profile.dev]
+opt-level = 1  # Better compile times, still good for debugging
+[profile.dev.package."*"]
+opt-level = 3  # Optimize dependencies
+
+[dependencies]
+bevy = { version = "0.14.2", features = ["bevy_ui", "dynamic_linking"] }
+bevy_derive = "0.14.2"
+env_logger = "0.11.5"
+log = "0.4.22"
